@@ -1,0 +1,29 @@
+---
+title: "MRC IEU R CRAN package cumulative downloads"
+author: TP
+format:
+  html:
+    embed-resources: true
+---
+
+```{r}
+library(packageRank)
+plot(
+  cranDownloads(
+    packages = c(
+      "OneSampleMR",
+      "ieugwasr",
+      "epigraphdb",
+      "tmsens",
+      "mrbayes",
+      "bpbounds",
+      "Statamarkdown"
+    ),
+    from = "2018",
+    to = Sys.Date() - 1
+  ),
+  statistic = "cumulative",
+  multi.plot = TRUE,
+  points = FALSE
+)
+```

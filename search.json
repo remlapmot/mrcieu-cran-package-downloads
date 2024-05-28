@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MRC IEU software metrics",
+    "section": "",
+    "text": "Raw download count of MRC IEU authored and co-authored R packages on CRAN\n\n\n\nShow the code\nlibrary(packageRank)\n\nplot(\n  cranDownloads(\n    packages = c(\n      \"OneSampleMR\",\n      \"ieugwasr\",\n      \"epigraphdb\",\n      \"tmsens\",\n      \"mrbayes\",\n      \"bpbounds\",\n      \"Statamarkdown\"\n    ),\n    from = \"2018\",\n    to = Sys.Date() - 1\n  ),\n  statistic = \"cumulative\",\n  multi.plot = TRUE,\n  points = FALSE\n)"
+  },
+  {
+    "objectID": "index.html#r-packages",
+    "href": "index.html#r-packages",
+    "title": "MRC IEU software metrics",
+    "section": "",
+    "text": "Raw download count of MRC IEU authored and co-authored R packages on CRAN\n\n\n\nShow the code\nlibrary(packageRank)\n\nplot(\n  cranDownloads(\n    packages = c(\n      \"OneSampleMR\",\n      \"ieugwasr\",\n      \"epigraphdb\",\n      \"tmsens\",\n      \"mrbayes\",\n      \"bpbounds\",\n      \"Statamarkdown\"\n    ),\n    from = \"2018\",\n    to = Sys.Date() - 1\n  ),\n  statistic = \"cumulative\",\n  multi.plot = TRUE,\n  points = FALSE\n)"
+  },
+  {
+    "objectID": "index.html#python-packages",
+    "href": "index.html#python-packages",
+    "title": "MRC IEU software metrics",
+    "section": "Python packages",
+    "text": "Python packages"
+  }
+]

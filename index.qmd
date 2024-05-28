@@ -34,3 +34,7 @@ plot(
 ```
 
 ## Python packages
+
+```{=html}
+<iframe src="https://pypistats.org/packages/ieugwaspy" width="900" height="400"></iframe>
+```

@@ -4,6 +4,8 @@ author: TP
 format:
   html:
     embed-resources: true
+    code-fold: true
+    code-summary: "Show the code"
 ---
 
 ```{r}

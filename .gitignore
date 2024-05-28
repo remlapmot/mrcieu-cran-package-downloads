@@ -50,3 +50,4 @@ rsconnect/
 
 # Because rendering using GitHub Actions - to gh-pages branch - ignore local render
 index.html
+*.rmarkdown

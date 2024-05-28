@@ -15,6 +15,7 @@ format:
 
 ```{r}
 library(packageRank)
+
 plot(
   cranDownloads(
     packages = c(

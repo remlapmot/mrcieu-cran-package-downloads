@@ -8,6 +8,8 @@ format:
     code-summary: "Show the code"
 ---
 
+## R packages
+
 ```{r}
 library(packageRank)
 plot(
@@ -29,3 +31,5 @@ plot(
   points = FALSE
 )
 ```
+
+## Python packages

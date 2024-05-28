@@ -41,3 +41,8 @@ plot(
 ```{=html}
 <iframe src="https://pypistats.org/packages/ieugwaspy" width="900" height="400"></iframe>
 ```
+
+## Links to article citations
+
+* MR-Base paper: https://elifesciences.org/articles/34408
+* MR-Steiger paper: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007081

@@ -35,6 +35,47 @@ plot(
 )
 ```
 
+* Adjusted download count for OneSampleMR
+
+```{r}
+#| warning: false
+#| message: false
+library(adjustedcranlogs)
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+
+mypkgdownloads <- adj_cran_downloads("OneSampleMR",
+  from = "2018-01-01",
+  to = Sys.Date() - 1
+)
+
+mypkgdownloads %>%
+  ggplot() +
+  geom_line(aes(x = date, y = adjusted_total_downloads)) +
+  geom_line(aes(x = date, y = total_downloads), color = "red", linetype = "dashed") +
+  annotate("text", y = 400, x = dmy("01-10-2020"), label = "Raw Downloads", color = "red") +
+  annotate("text", y = 50, x = dmy("20-10-2020"), label = "Adjusted Downloads", color = "black") +
+  theme_minimal()
+```
+
+* Adjusted download count for ieugwasr
+
+```{r}
+mypkgdownloads <- adj_cran_downloads("ieugwasr",
+  from = "2024-01-01",
+  to = Sys.Date() - 1
+)
+
+mypkgdownloads %>%
+  ggplot() +
+  geom_line(aes(x = date, y = adjusted_total_downloads)) +
+  geom_line(aes(x = date, y = total_downloads), color = "red", linetype = "dashed") +
+  annotate("text", y = 400, x = dmy("01-10-2024"), label = "Raw Downloads", color = "red") +
+  annotate("text", y = 50, x = dmy("20-10-2024"), label = "Adjusted Downloads", color = "black") +
+  theme_minimal()
+```
+
 ## Python packages
 
 ```{=html}

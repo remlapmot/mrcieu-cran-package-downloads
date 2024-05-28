@@ -1,0 +1,13 @@
+project:
+  type: website
+
+website:
+  repo-url: https://github.com/remlapmot/mrcieu-cran-package-downloads/
+  repo-actions: source
+  site-url: https://remlapmot.github.io/mrcieu-cran-package-downloads/
+
+format:
+  html:
+    toc: true
+    link-external-icon: true
+    toc-depth: 3

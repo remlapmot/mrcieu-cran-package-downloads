@@ -36,6 +36,24 @@ plot(
 )
 ```
 
+* Comparison with non-IEU MendelianRandomization package
+
+```{r}
+plot(
+  cranDownloads(
+    packages = c(
+      "MendelianRandomization",
+      "ieugwasr"
+    ),
+    from = "2016-08-31",
+    to = Sys.Date() - 1
+  ),
+  statistic = "cumulative",
+  multi.plot = TRUE,
+  points = FALSE
+)
+```
+
 ## Python packages
 
 * ieugwaspy

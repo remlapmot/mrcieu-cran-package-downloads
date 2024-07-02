@@ -28,7 +28,8 @@ plot(
       "Statamarkdown"
     ),
     from = "2018",
-    to = Sys.Date() - 1
+    to = Sys.Date() - 1,
+    fix.cranlogs = TRUE
   ),
   statistic = "cumulative",
   multi.plot = TRUE,
@@ -46,7 +47,8 @@ plot(
       "ieugwasr"
     ),
     from = "2016-08-31",
-    to = Sys.Date() - 1
+    to = Sys.Date() - 1,
+    fix.cranlogs = TRUE
   ),
   statistic = "cumulative",
   multi.plot = TRUE,

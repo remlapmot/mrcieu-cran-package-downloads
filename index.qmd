@@ -13,9 +13,11 @@ format:
 
 * Raw download count of MRC IEU authored and co-authored R packages on CRAN
 
-```{r}
+```{r setup}
 library(packageRank)
+```
 
+```{r}
 plot(
   cranDownloads(
     packages = c(

@@ -13,12 +13,14 @@ format:
 
 * Raw download count of MRC IEU authored and co-authored R packages on CRAN
 
-```{r setup}
+```{r setup, warning=FALSE}
 library(packageRank)
+library(ggplot2)
+library(scales)
 ```
 
 ```{r}
-plot(
+dat <- 
   cranDownloads(
     packages = c(
       "OneSampleMR",
@@ -32,11 +34,12 @@ plot(
     from = "2018",
     to = Sys.Date() - 1,
     fix.cranlogs = TRUE
-  ),
-  statistic = "cumulative",
-  multi.plot = TRUE,
-  points = FALSE
-)
+  )
+dat$cranlogs.data |>
+  ggplot() + 
+  aes(x = date, y = cumulative, color = package) + 
+  geom_line(linewidth = 0.75) + 
+  scale_y_continuous(labels = label_comma())
 ```
 
 * Comparison with non-IEU MendelianRandomization package

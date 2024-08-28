@@ -16,6 +16,7 @@ format:
 ```{r setup, warning=FALSE}
 library(packageRank)
 library(ggplot2)
+library(PrettyCols)
 library(scales)
 ```
 
@@ -39,13 +40,17 @@ dat$cranlogs.data |>
   ggplot() + 
   aes(x = date, y = cumulative, color = package) + 
   geom_line(linewidth = 0.75) + 
-  scale_y_continuous(labels = label_comma())
+  scale_y_continuous(labels = label_comma()) +
+  scale_color_pretty_d(palette = "Autumn") + 
+  ylab("Cumulative downloads") +
+  xlab("Date") +
+  labs(color = 'Package') 
 ```
 
 * Comparison with non-IEU MendelianRandomization package
 
 ```{r}
-plot(
+dat2 <- 
   cranDownloads(
     packages = c(
       "MendelianRandomization",
@@ -54,11 +59,16 @@ plot(
     from = "2016-08-31",
     to = Sys.Date() - 1,
     fix.cranlogs = TRUE
-  ),
-  statistic = "cumulative",
-  multi.plot = TRUE,
-  points = FALSE
-)
+  )
+dat2$cranlogs.data |>
+  ggplot() + 
+  aes(x = date, y = cumulative, color = package) + 
+  geom_line(linewidth = 0.75) + 
+  scale_y_continuous(labels = label_comma()) +
+  scale_color_pretty_d(palette = "Autumn") + 
+  ylab("Cumulative downloads") +
+  xlab("Date") +
+  labs(color = 'Package')
 ```
 
 ## Python packages

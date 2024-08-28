@@ -49,6 +49,8 @@ jobs:
             any::knitr
             any::rmarkdown
             any::packageRank
+            any::PrettyCols
+            any::scales
 
       # From https://github.com/julia-actions/setup-julia
       # - name: Setup Julia

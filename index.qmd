@@ -30,7 +30,8 @@ dat <-
       "tmsens",
       "mrbayes",
       "bpbounds",
-      "Statamarkdown"
+      "Statamarkdown",
+      "midoc"
     ),
     from = "2018",
     to = Sys.Date() - 1,

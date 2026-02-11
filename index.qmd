@@ -31,7 +31,8 @@ dat <-
       "mrbayes",
       "bpbounds",
       "Statamarkdown",
-      "midoc"
+      "midoc",
+      "SEQTaRget"
     ),
     from = "2018",
     to = Sys.Date() - 1,

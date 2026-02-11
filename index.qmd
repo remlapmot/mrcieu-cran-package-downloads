@@ -81,6 +81,12 @@ dat2$cranlogs.data |>
 <iframe src="https://pypistats.org/packages/ieugwaspy" width="900" height="400"></iframe>
 ```
 
+* pygwasvcf
+
+```{=html}
+<iframe src="https://pypistats.org/packages/pygwasvcf" width="900" height="400"></iframe>
+```
+
 ## Links to article citations
 
 * MR-Base paper: <https://elifesciences.org/articles/34408>

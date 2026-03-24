@@ -23,7 +23,7 @@ library(scales)
 ```{r}
 dat <- 
   cranDownloads(
-    packages = c(
+    package = c(
       "OneSampleMR",
       "ieugwasr",
       "epigraphdb",
@@ -54,7 +54,7 @@ dat$cranlogs.data |>
 ```{r}
 dat2 <- 
   cranDownloads(
-    packages = c(
+    package = c(
       "MendelianRandomization",
       "ieugwasr"
     ),
